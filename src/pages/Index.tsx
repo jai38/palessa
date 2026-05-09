@@ -7,18 +7,31 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import OleanderDifference from "@/components/OleanderDifference";
 import FeaturedIn from "@/components/FeaturedIn";
 import Footer from "@/components/Footer";
+import { FadeIn } from "@/components/FadeIn";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <HeroSlider />
-      <WelcomeSection />
-      <AccommodationsSection />
-      <AmenitiesSection />
-      <TestimonialsSection />
-      <OleanderDifference />
-      <FeaturedIn />
+      <FadeIn delay={0.2}>
+        <WelcomeSection />
+      </FadeIn>
+      <FadeIn>
+        <AccommodationsSection />
+      </FadeIn>
+      <FadeIn>
+        <AmenitiesSection />
+      </FadeIn>
+      <FadeIn>
+        <TestimonialsSection />
+      </FadeIn>
+      <FadeIn>
+        <OleanderDifference />
+      </FadeIn>
+      <FadeIn>
+        <FeaturedIn />
+      </FadeIn>
       <Footer />
     </div>
   );

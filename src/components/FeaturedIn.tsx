@@ -12,7 +12,7 @@ const FeaturedIn = () => {
   return (
     <section className="py-16 px-6 bg-oleander-cream">
       <h4 className="text-center font-heading text-2xl tracking-[0.15em] text-foreground mb-10 uppercase">
-        Featured In
+        EXPERIENCE GRANDEUR LIKE NEVER BEFORE IN ULHASNAGAR!
       </h4>
 
       {/* Marquee */}

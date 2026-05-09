@@ -4,19 +4,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     image: "https://oleanderfarms.com/wp-content/uploads/2025/01/oleander-farm-banner-1.png",
-    title: "Welcome to\nthe Farm Retreat",
+    title: "ULHASNAGAR'S FIRST EVER PALACE OF FLAVOURS,\nNIGHTLIFE & CELEBRATIONS!",
   },
   {
     image: "https://oleanderfarms.com/wp-content/uploads/2025/01/oleander-farm-banner.png",
-    title: "In Nature,\nWith Luxury",
+    title: "WELCOME TO\nPALESSA",
   },
   {
     image: "https://oleanderfarms.com/wp-content/uploads/2024/06/Oleander-farm-5349.jpeg",
-    title: "Welcome to\nthe Farm Retreat",
+    title: "ULHASNAGAR'S FIRST EVER PALACE OF FLAVOURS,\nNIGHTLIFE & CELEBRATIONS!",
   },
   {
     image: "https://oleanderfarms.com/wp-content/uploads/2024/06/luxury-resort-karjat-8211-oleander-farm-5356.jpeg",
-    title: "In Nature,\nWith Luxury",
+    title: "WELCOME TO\nPALESSA",
   },
 ];
 
@@ -34,7 +34,7 @@ const HeroSlider = () => {
   const next = () => setCurrent((c) => (c + 1) % slides.length);
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section id="home" className="relative h-screen overflow-hidden">
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -75,7 +75,7 @@ const HeroSlider = () => {
       </div>
 
       {/* Booking bar */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-10">
+      {/* <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-10">
         <div className="bg-oleander-olive/85 backdrop-blur-sm flex flex-wrap items-center gap-4 px-6 py-4 rounded-t-sm">
           <div className="flex-1 min-w-[140px]">
             <select className="w-full bg-transparent border border-primary-foreground/30 text-primary-foreground text-sm px-3 py-2 font-body appearance-none">
@@ -98,13 +98,13 @@ const HeroSlider = () => {
             </select>
           </div>
           <a
-            href="#"
+            href="#accommodations"
             className="bg-primary text-primary-foreground px-8 py-2 text-sm font-body tracking-wider hover:brightness-110 transition-all"
           >
             Check Availability
           </a>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

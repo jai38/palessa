@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       {/* Contact bar */}
       <div className="bg-oleander-dark text-primary-foreground">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-primary-foreground/10 py-10 px-6">
@@ -10,9 +10,9 @@ const Footer = () => {
               Address
             </p>
             <p className="text-sm font-body leading-relaxed text-primary-foreground/80">
-              Oleander Farms Pvt Ltd, Karjat Chowk Road, Wavarle Village, Khalapur,
+              PALESSA, Ulhasnagar,
               <br />
-              Karjat, Maharashtra 410206.
+              Maharashtra.
             </p>
           </div>
 
@@ -22,9 +22,9 @@ const Footer = () => {
               Phone
             </p>
             <p className="text-sm font-body text-primary-foreground/80">
-              <a href="#" className="hover:text-primary transition-colors">022-50022222</a>
+              <a href="tel:022-50022222" className="hover:text-primary transition-colors">022-50022222</a>
               <br />
-              <a href="#" className="hover:text-primary transition-colors">022-50022223</a>
+              <a href="tel:022-50022223" className="hover:text-primary transition-colors">022-50022223</a>
             </p>
           </div>
 
@@ -34,9 +34,9 @@ const Footer = () => {
               Email
             </p>
             <p className="text-sm font-body text-primary-foreground/80">
-              <a href="#" className="hover:text-primary transition-colors">info@oleanderfarms.com</a>
+              <a href="mailto:info@palessa.com" className="hover:text-primary transition-colors">info@palessa.com</a>
               <br />
-              <a href="#" className="hover:text-primary transition-colors">roomreservations@oleanderfarms.com</a>
+              <a href="mailto:reservations@palessa.com" className="hover:text-primary transition-colors">reservations@palessa.com</a>
             </p>
           </div>
 
@@ -69,12 +69,12 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="bg-oleander-footer-bg text-primary-foreground/50 py-4 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-xs font-body">
-          <p>Copyright 2025 — Oleander Farms. All rights reserved.</p>
-          <a href="#" className="hover:text-primary-foreground transition-colors">Blogs</a>
+          <p>Copyright 2025 — PALESSA. All rights reserved.</p>
+          {/* <a href="#" className="hover:text-primary-foreground transition-colors">Blogs</a> */}
           <p>
-            Website Design & Development by{" "}
-            <a href="#" className="text-primary hover:underline">
-              Bpointer Technologies
+            Website developed by{" "}
+            <a href="https://www.linkedin.com/in/jai-malani" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              Jai Malani
             </a>
             .
           </p>

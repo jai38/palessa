@@ -8,7 +8,7 @@ const testimonials = [
     source: "Google Maps",
   },
   {
-    text: "We had a GREAT time at Oleander Farms. Our stay here was lovely with very well maintained amenities, Saltt restaurant had some yummy food too. We also loved the swimming pool and area around. My family will certainly come back and recommend everyone we know. Highly recommended",
+    text: "We had a GREAT time at PALESSA. Our stay here was lovely with very well maintained amenities, ECHO restaurant had some yummy food too. We also loved the rooftop lounge. My family will certainly come back and recommend everyone we know. Highly recommended",
     author: "Vanessa Gomes",
     source: "Google Maps",
   },

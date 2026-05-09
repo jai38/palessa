@@ -1,71 +1,101 @@
-const differences = [
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const slides = [
   {
-    title: "Nature-Bound Stays",
-    desc: "Tastefully designed rooms by the lake, pool, and lush landscapes that speak of luxury, simplicity, and serenity together",
+    title: "ECHO BY PALESSA",
+    desc: "The ECHO restaurant at Palessa brings together global culinary influences with the depth and warmth of Indian Awadhi flavours. The approach is thoughtful and modern - familiar tastes reinterpreted with care and balance.",
+    image: "https://oleanderfarms.com/wp-content/uploads/2024/04/essentials-1-scaled.jpg.webp",
   },
   {
-    title: "Fulfilment for All",
-    desc: "Indulgent activities and offerings to match the needs of anyone and everyone, families, corporate off-sites, or a party of two or more",
+    title: "O MOON Rooftop Lounge",
+    desc: "Set above the city, O MOON at Palessa is designed for moments that unfold slowly. As the day transitions into night, the space comes alive with crafted cocktails, curated beverages, and a relaxed yet refined ambience.",
+    image: "https://oleanderfarms.com/wp-content/uploads/2024/04/essentials-scaled.jpg.webp",
   },
   {
-    title: "Surreal Celebrations",
-    desc: "Countless spots, surrounded by nature's wonders and luxury, perfected on demand to suit your preferences for your big days",
+    title: "Emerald by Palessa",
+    desc: "PALESSA features two expansive banquet halls - EMERALD & PEARL. Thoughtfully planned to host meaningful celebrations and professional events, the spaces are suitable for weddings, conferences, and social gatherings alike.",
+    image: "https://oleanderfarms.com/wp-content/uploads/2023/05/POOL-VIEW-ROOMS--e1712729225581-780x564.jpeg.webp",
   },
   {
-    title: "Unparalleled Comfort",
-    desc: "An endless array of luxurious amenities and restaurants to attend to your comfort needs and offer you comprehensive experiences",
+    title: "Pearl by Palessa",
+    desc: "Each hall offers 4,500 sq. ft. of event space up to 200 guests, stage setup and professional lighting, audio-visual support, projector screen, high-speed Wi-Fi and catering & service assistance.",
+    image: "https://oleanderfarms.com/wp-content/uploads/2023/05/the-cottages.webp",
   },
 ];
 
 const OleanderDifference = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prev = () => setCurrentIndex((c) => (c - 1 + slides.length) % slides.length);
+  const next = () => setCurrentIndex((c) => (c + 1) % slides.length);
+
   return (
-    <section className="relative">
-      {/* Two-column layout with bg image */}
-      <div className="flex flex-col lg:flex-row">
-        {/* Image side */}
-        <div className="lg:w-1/2 relative min-h-[400px]">
-          <img
-            src="https://oleanderfarms.com/wp-content/uploads/2024/04/essentials-1-scaled.jpg.webp"
-            alt="Oleander Farms difference"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-foreground/30" />
-          <div className="relative z-10 flex items-end p-10 h-full">
-            <p className="font-heading text-primary-foreground text-lg md:text-xl italic max-w-md">
-              With the welcoming success of the restaurant then began the pursuit of a venture larger than that, larger than life – Oleander Farms.
-            </p>
+    <section id="offerings" className="bg-oleander-cream py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-6">
+        <h3 className="font-heading text-3xl md:text-4xl text-foreground mb-12 text-center max-w-3xl mx-auto">
+          Flavours, conversations, and evenings that linger
+        </h3>
+
+        <div className="relative">
+          <div className="overflow-hidden relative">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {slides.map((slide, i) => (
+                <div key={i} className="w-full flex-shrink-0">
+                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+                    {/* Image Left */}
+                    <div className="w-full lg:w-1/2 relative aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[500px]">
+                      <img
+                        src={slide.image}
+                        alt={slide.title}
+                        className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                    {/* Content Right */}
+                    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                      <h5 className="font-heading text-2xl md:text-3xl text-foreground mb-6">{slide.title}</h5>
+                      <p className="text-muted-foreground font-body text-base leading-relaxed max-w-lg">
+                        {slide.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Content side */}
-        <div className="lg:w-1/2 bg-oleander-cream py-16 px-8 md:px-16">
-          <p className="text-xs tracking-[0.3em] text-muted-foreground uppercase font-body mb-2">
-            A LUXURY RESORT IN KARJAT
-          </p>
-          <h3 className="font-heading text-3xl md:text-4xl text-foreground mb-10">
-            The Oleander Difference
-          </h3>
+          {/* Navigation Controls */}
+          <div className="flex justify-center gap-3 mt-12">
+            <button
+              onClick={prev}
+              className="w-12 h-12 rounded-full border border-foreground/30 flex items-center justify-center text-foreground/50 hover:border-foreground hover:text-foreground transition-colors"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button
+              onClick={next}
+              className="w-12 h-12 rounded-full border border-foreground/30 flex items-center justify-center text-foreground/50 hover:border-foreground hover:text-foreground transition-colors"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+          </div>
 
-          <div className="space-y-8">
-            {differences.map((item, i) => (
-              <div key={i}>
-                <h5 className="font-heading text-lg text-foreground mb-2">{item.title}</h5>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
+          {/* Dots */}
+          <div className="flex justify-center gap-2 mt-6">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentIndex(i)}
+                className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                  i === currentIndex ? "bg-foreground" : "bg-foreground/20"
+                }`}
+              />
             ))}
           </div>
         </div>
-      </div>
-
-      {/* Second image */}
-      <div className="w-full h-[300px] md:h-[400px]">
-        <img
-          src="https://oleanderfarms.com/wp-content/uploads/2024/04/essentials-scaled.jpg.webp"
-          alt="Oleander Farms"
-          className="w-full h-full object-cover"
-        />
       </div>
     </section>
   );

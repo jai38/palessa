@@ -2,21 +2,17 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const leftNav = [
-  { label: "HOME", href: "#" },
-  { label: "ABOUT US", href: "#" },
-  { label: "STAY", href: "#" },
-  { label: "EAT & SHOP", href: "#", hasDropdown: true },
-  { label: "EXPERIENCES", href: "#", hasDropdown: true },
-  { label: "SPA", href: "#" },
-  { label: "WELLNESS", href: "#" },
-  { label: "SALON", href: "#" },
+  { label: "HOME", href: "#home" },
+  { label: "ABOUT US", href: "#about" },
+  { label: "AMENITIES", href: "#amenities" },
+  { label: "OFFERINGS", href: "#offerings" },
+  // { label: "EXPERIENCES", href: "#"},
 ];
 
 const rightNav = [
-  { label: "WEDDINGS", href: "#" },
-  { label: "CORPORATE EVENTS", href: "#" },
-  { label: "OFFERS", href: "#" },
-  { label: "CONTACT US", href: "#" },
+  { label: "BOOKINGS", href: "#accommodations" },
+  { label: "OFFERS", href: "#accommodations" },
+  { label: "CONTACT US", href: "#contact" },
 ];
 
 const Header = () => {
@@ -42,12 +38,8 @@ const Header = () => {
         </ul>
 
         {/* Logo center */}
-        <a href="#" className="flex-shrink-0 mx-4">
-          <img
-            src="https://oleanderfarms.com/wp-content/uploads/2023/05/logo-white-1.png"
-            alt="Oleander Farms"
-            className="h-16 w-auto"
-          />
+        <a href="#home" className="flex-shrink-0 mx-4 text-primary-foreground font-heading text-2xl tracking-widest">
+          PALESSA
         </a>
 
         {/* Right nav */}
@@ -64,12 +56,6 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <a
-            href="#"
-            className="ml-4 border border-primary-foreground text-primary-foreground px-6 py-2 text-xs tracking-widest hover:bg-primary-foreground hover:text-foreground transition-all duration-300"
-          >
-            Book Now
-          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -94,7 +80,7 @@ const Header = () => {
             ))}
             <li>
               <a
-                href="#"
+                href="#accommodations"
                 className="inline-block border border-primary-foreground px-6 py-2 text-xs tracking-widest mt-2"
               >
                 Book Now

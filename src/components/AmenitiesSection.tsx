@@ -1,24 +1,44 @@
 const amenities = [
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/fully-equipped-gym.jpg.webp",
-    title: "Fully Equipped Gymnasium",
-    desc: "Stay active and fit with our modern fitness center.",
-  },
-  {
-    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/infinity-pool.jpg.webp",
-    title: "Infinity Pool",
-    desc: "Unwind at our breathtaking infinity pool, offering uninterrupted views of the landscape.",
+    image: "https://oleanderfarms.com/wp-content/uploads/2023/05/POOL-VIEW-ROOMS--e1712729225581-780x564.jpeg.webp",
+    title: "29 BOUTIQUE HOTEL ROOMS",
+    desc: "27 STANDARD &\n2 SUITE ROOMS WITH JACUZZI",
   },
   {
     image: "https://oleanderfarms.com/wp-content/uploads/2025/06/lake-view-restro-bar.jpg.webp",
-    title: "Lake-View Restobar",
-    desc: "Indulge in culinary delights with panoramic views of tranquil waters.",
+    title: "ROOFTOP LOUNGE WITH PREMIUM AMBIENCE",
+    desc: "",
   },
+  {
+    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/infinity-pool.jpg.webp",
+    title: "GLOBAL FUSION RESTAURANT WITH AWADHI INFLUENCE",
+    desc: "",
+  },
+  {
+    image: "https://oleanderfarms.com/wp-content/uploads/2024/04/essentials-1-scaled.jpg.webp",
+    title: "TWO SPACIOUS BANQUET HALLS",
+    desc: "FOR EVENTS AND CELEBRATIONS",
+  },
+  {
+    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/fully-equipped-gym.jpg.webp",
+    title: "CONCIERGE SERVICES",
+    desc: "",
+  },
+  {
+    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/Oleander-farm-2.webp",
+    title: "TRAVEL DESK ASSISTANCE",
+    desc: "",
+  },
+  // {
+  //   image: "https://oleanderfarms.com/wp-content/uploads/2024/03/Screenshot-2024-03-11-at-1.38.42-PM-780x785.png.webp",
+  //   title: "DEDICATED PARKING FACILITY",
+  //   desc: "",
+  // },
 ];
 
 const AmenitiesSection = () => {
   return (
-    <section className="relative">
+    <section id="amenities" className="relative">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
@@ -32,14 +52,11 @@ const AmenitiesSection = () => {
       <div className="relative z-10 py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-xs tracking-[0.3em] text-primary-foreground/70 uppercase font-body mb-2">
-            Unforgettable Experience
+            ULHASNAGAR’S NEWEST LANDMARK OF CELEBRATION & LUXURY
           </p>
-          <h3 className="font-heading text-3xl md:text-4xl text-primary-foreground mb-3">
-            Discover World Class Amenities
+          <h3 className="font-heading text-3xl md:text-4xl text-primary-foreground mb-12">
+            AMENITIES
           </h3>
-          <p className="text-primary-foreground/70 font-body text-sm mb-12">
-            Experience luxury amidst nature like never before
-          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {amenities.map((amenity, i) => (
@@ -54,7 +71,7 @@ const AmenitiesSection = () => {
                 <h5 className="font-heading text-lg text-primary-foreground mb-2">
                   {amenity.title}
                 </h5>
-                <p className="text-primary-foreground/70 font-body text-sm leading-relaxed">
+                <p className="text-primary-foreground/70 font-body text-sm leading-relaxed whitespace-pre-line">
                   {amenity.desc}
                 </p>
               </div>
