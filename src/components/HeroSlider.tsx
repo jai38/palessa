@@ -3,19 +3,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2025/01/oleander-farm-banner-1.png",
+    image: "/images/Banner_slide_1.png",
     title: "ULHASNAGAR'S FIRST EVER PALACE OF FLAVOURS,\nNIGHTLIFE & CELEBRATIONS!",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2025/01/oleander-farm-banner.png",
+    image: "/images/Banner_Slide_2.png",
     title: "WELCOME TO\nPALESSA",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2024/06/Oleander-farm-5349.jpeg",
+    image: "/images/Banner_slide_3.png",
     title: "ULHASNAGAR'S FIRST EVER PALACE OF FLAVOURS,\nNIGHTLIFE & CELEBRATIONS!",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2024/06/luxury-resort-karjat-8211-oleander-farm-5356.jpeg",
+    image: "/images/Banner_slide_4.png",
     title: "WELCOME TO\nPALESSA",
   },
 ];
@@ -76,7 +76,7 @@ const HeroSlider = () => {
 
       {/* Booking bar */}
       {/* <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-10">
-        <div className="bg-oleander-olive/85 backdrop-blur-sm flex flex-wrap items-center gap-4 px-6 py-4 rounded-t-sm">
+        <div className="bg-palessa-olive/85 backdrop-blur-sm flex flex-wrap items-center gap-4 px-6 py-4 rounded-t-sm">
           <div className="flex-1 min-w-[140px]">
             <select className="w-full bg-transparent border border-primary-foreground/30 text-primary-foreground text-sm px-3 py-2 font-body appearance-none">
               <option>Check In</option>

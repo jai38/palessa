@@ -3,12 +3,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const rooms = [
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2023/05/POOL-VIEW-ROOMS--e1712729225581-780x564.jpeg.webp",
+    image: "/images/Standard_Rooms.png",
     title: "STANDARD ROOMS",
     desc: "27 STANDARD ROOMS, DESIGNED FOR RELAXED EVERYDAY COMFORT.\n\n• 23 m2 / 247 ft2\n• Queen-size exclusive\n• En-suite bathroom\n• Diptyque amenities",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2023/05/the-cottages.webp",
+    image: "/images/Suites.png",
     title: "SUITES",
     desc: "2 SUITE ROOMS, FEATURING PRIVATE JACUZZI FACILITIES FOR AN ELEVATED EXPERIENCE.\n\n• Offering views of Waterloo Place\n• Traditional style King-size\n• Separate lounge area\n• Large bathroom with bath and separate rainfall shower\n• Jacuzzi\n• Diptyque amenities",
   }
@@ -16,7 +16,7 @@ const rooms = [
 
 const AccommodationsSection = () => {
   return (
-    <section id="accommodations" className="py-20 px-6 bg-oleander-warm">
+    <section id="accommodations" className="py-20 px-6 bg-palessa-cream">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 max-w-4xl mx-auto">
           <p className="text-xs tracking-[0.3em] text-muted-foreground uppercase font-body mb-2">

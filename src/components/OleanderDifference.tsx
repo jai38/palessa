@@ -1,37 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
     title: "ECHO BY PALESSA",
     desc: "The ECHO restaurant at Palessa brings together global culinary influences with the depth and warmth of Indian Awadhi flavours. The approach is thoughtful and modern - familiar tastes reinterpreted with care and balance.",
-    image: "https://oleanderfarms.com/wp-content/uploads/2024/04/essentials-1-scaled.jpg.webp",
+    image: "/images/ECHO_BY_PALESSA.png",
   },
   {
     title: "O MOON Rooftop Lounge",
     desc: "Set above the city, O MOON at Palessa is designed for moments that unfold slowly. As the day transitions into night, the space comes alive with crafted cocktails, curated beverages, and a relaxed yet refined ambience.",
-    image: "https://oleanderfarms.com/wp-content/uploads/2024/04/essentials-scaled.jpg.webp",
+    image: "/images/O_MOON.png",
   },
   {
     title: "Emerald by Palessa",
     desc: "PALESSA features two expansive banquet halls - EMERALD & PEARL. Thoughtfully planned to host meaningful celebrations and professional events, the spaces are suitable for weddings, conferences, and social gatherings alike.",
-    image: "https://oleanderfarms.com/wp-content/uploads/2023/05/POOL-VIEW-ROOMS--e1712729225581-780x564.jpeg.webp",
+    image: "/images/EMERALD_BY_PALESSA.png",
   },
   {
     title: "Pearl by Palessa",
     desc: "Each hall offers 4,500 sq. ft. of event space up to 200 guests, stage setup and professional lighting, audio-visual support, projector screen, high-speed Wi-Fi and catering & service assistance.",
-    image: "https://oleanderfarms.com/wp-content/uploads/2023/05/the-cottages.webp",
+    image: "/images/PEARL_BY_PALESSA.png",
   },
 ];
 
 const OleanderDifference = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((c) => (c + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   const prev = () => setCurrentIndex((c) => (c - 1 + slides.length) % slides.length);
   const next = () => setCurrentIndex((c) => (c + 1) % slides.length);
 
   return (
-    <section id="offerings" className="bg-oleander-cream py-16 md:py-24">
+    <section id="offerings" className="bg-palessa-cream py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         <h3 className="font-heading text-3xl md:text-4xl text-foreground mb-12 text-center max-w-3xl mx-auto">
           Flavours, conversations, and evenings that linger
@@ -41,10 +48,17 @@ const OleanderDifference = () => {
           <div className="overflow-hidden relative">
             <div
               className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              style={{ 
+                width: `${slides.length * 100}%`, 
+                transform: `translateX(-${(currentIndex * 100) / slides.length}%)` 
+              }}
             >
               {slides.map((slide, i) => (
-                <div key={i} className="w-full flex-shrink-0">
+                <div 
+                  key={i} 
+                  className="flex-shrink-0" 
+                  style={{ width: `${100 / slides.length}%` }}
+                >
                   <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
                     {/* Image Left */}
                     <div className="w-full lg:w-1/2 relative aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[500px]">

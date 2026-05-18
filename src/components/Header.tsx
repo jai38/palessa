@@ -69,7 +69,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-oleander-dark/95 backdrop-blur-sm px-6 py-6">
+        <div className="lg:hidden bg-palessa-charcoal/95 backdrop-blur-sm px-6 py-6">
           <ul className="flex flex-col gap-4 text-primary-foreground text-sm font-body tracking-widest">
             {[...leftNav, ...rightNav].map((item) => (
               <li key={item.label}>

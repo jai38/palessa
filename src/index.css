@@ -6,44 +6,41 @@
 
 @layer base {
   :root {
-    --background: 40 20% 96%;
-    --foreground: 0 0% 15%;
+    --background: 51 29.2% 90.6%;
+    --foreground: 140 8.6% 13.7%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card: 51 29.2% 90.6%;
+    --card-foreground: 140 8.6% 13.7%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover: 51 29.2% 90.6%;
+    --popover-foreground: 140 8.6% 13.7%;
 
-    --primary: 37 35% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 36 24.9% 55.1%;
+    --primary-foreground: 51 29.2% 90.6%;
 
-    --secondary: 150 15% 35%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 139 15.3% 26.9%;
+    --secondary-foreground: 51 29.2% 90.6%;
 
-    --muted: 40 15% 92%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 51 15% 85%;
+    --muted-foreground: 140 8.6% 40%;
 
-    --accent: 37 35% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 36 24.9% 55.1%;
+    --accent-foreground: 51 29.2% 90.6%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 10% 85%;
-    --input: 40 10% 85%;
-    --ring: 37 35% 55%;
+    --border: 51 15% 85%;
+    --input: 51 15% 85%;
+    --ring: 36 24.9% 55.1%;
 
     --radius: 0.25rem;
 
-    /* Oleander custom tokens */
-    --oleander-gold: 37 35% 55%;
-    --oleander-dark: 160 10% 18%;
-    --oleander-olive: 150 15% 35%;
-    --oleander-cream: 40 20% 96%;
-    --oleander-warm: 40 30% 94%;
-    --oleander-charcoal: 0 0% 20%;
-    --oleander-footer-bg: 160 10% 14%;
+    /* Palessa custom tokens */
+    --palessa-gold: 36 24.9% 55.1%;
+    --palessa-cream: 51 29.2% 90.6%;
+    --palessa-olive: 139 15.3% 26.9%;
+    --palessa-charcoal: 140 8.6% 13.7%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

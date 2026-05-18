@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer id="contact">
       {/* Contact bar */}
-      <div className="bg-oleander-dark text-primary-foreground">
+      <div className="bg-palessa-charcoal text-primary-foreground">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-primary-foreground/10 py-10 px-6">
           {/* Address */}
           <div className="text-center py-6 md:py-0 px-4">
@@ -67,7 +67,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom bar */}
-      <div className="bg-oleander-footer-bg text-primary-foreground/50 py-4 px-6">
+      <div className="bg-palessa-charcoal text-primary-foreground/50 py-4 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-xs font-body">
           <p>Copyright 2025 — PALESSA. All rights reserved.</p>
           {/* <a href="#" className="hover:text-primary-foreground transition-colors">Blogs</a> */}

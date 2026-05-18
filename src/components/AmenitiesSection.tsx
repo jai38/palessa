@@ -1,31 +1,31 @@
 const amenities = [
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2023/05/POOL-VIEW-ROOMS--e1712729225581-780x564.jpeg.webp",
+    image: "/images/29_Boutique_Hotel_Rooms.png",
     title: "29 BOUTIQUE HOTEL ROOMS",
     desc: "27 STANDARD &\n2 SUITE ROOMS WITH JACUZZI",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/lake-view-restro-bar.jpg.webp",
+    image: "/images/Rooftop_Lounge.png",
     title: "ROOFTOP LOUNGE WITH PREMIUM AMBIENCE",
     desc: "",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/infinity-pool.jpg.webp",
+    image: "/images/Global_Fusion_Restaurant_.png",
     title: "GLOBAL FUSION RESTAURANT WITH AWADHI INFLUENCE",
     desc: "",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2024/04/essentials-1-scaled.jpg.webp",
+    image: "/images/Two_Spacious_Banquet_Halls.png",
     title: "TWO SPACIOUS BANQUET HALLS",
     desc: "FOR EVENTS AND CELEBRATIONS",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/fully-equipped-gym.jpg.webp",
+    image: "/images/Concierge_Services.png",
     title: "CONCIERGE SERVICES",
     desc: "",
   },
   {
-    image: "https://oleanderfarms.com/wp-content/uploads/2025/06/Oleander-farm-2.webp",
+    image: "/images/Travel_Desk_Assistance.png",
     title: "TRAVEL DESK ASSISTANCE",
     desc: "",
   },
@@ -42,7 +42,7 @@ const AmenitiesSection = () => {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="https://oleanderfarms.com/wp-content/uploads/2023/05/THE-GROVE-VILLA-5.jpeg"
+          src="/images/Amenities_Background.png"
           alt="Amenities background"
           className="w-full h-full object-cover"
         />

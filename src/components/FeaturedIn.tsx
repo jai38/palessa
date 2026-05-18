@@ -1,29 +1,25 @@
 const logos = [
-  { src: "https://oleanderfarms.com/wp-content/uploads/2025/06/elle.webp", alt: "Elle" },
-  { src: "https://oleanderfarms.com/wp-content/uploads/2025/06/femina.webp", alt: "Femina" },
-  { src: "https://oleanderfarms.com/wp-content/uploads/2025/06/grazia.webp", alt: "Grazia" },
-  { src: "https://oleanderfarms.com/wp-content/uploads/2025/06/GQ.webp", alt: "GQ India" },
-  { src: "https://oleanderfarms.com/wp-content/uploads/2025/06/AD.webp", alt: "Architectural Digest" },
-  { src: "https://oleanderfarms.com/wp-content/uploads/2025/06/traveller.webp", alt: "Traveller" },
-  { src: "https://oleanderfarms.com/wp-content/uploads/2025/06/curly-tales.webp", alt: "Curly Tales" },
+  { src: "/images/omoon_V2.png", alt: "O Moon" },
+  { src: "/images/ECHO_V2.png", alt: "Echo" },
+  { src: "/images/PALESSA_LOGO.png", alt: "Palessa" },
 ];
 
 const FeaturedIn = () => {
   return (
-    <section className="py-16 px-6 bg-oleander-cream">
+    <section className="py-16 px-6 bg-palessa-cream">
       <h4 className="text-center font-heading text-2xl tracking-[0.15em] text-foreground mb-10 uppercase">
         EXPERIENCE GRANDEUR LIKE NEVER BEFORE IN ULHASNAGAR!
       </h4>
 
       {/* Marquee */}
       <div className="overflow-hidden">
-        <div className="flex animate-marquee whitespace-nowrap">
-          {[...logos, ...logos].map((logo, i) => (
+        <div className="flex animate-marquee whitespace-nowrap items-center">
+          {[...Array(4).fill(logos).flat(), ...Array(4).fill(logos).flat()].map((logo, i) => (
             <img
               key={i}
               src={logo.src}
               alt={logo.alt}
-              className="h-10 md:h-14 mx-8 md:mx-14 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              className="h-28 md:h-40 mx-12 md:mx-20 object-contain grayscale hover:grayscale-0 transition-all duration-300"
             />
           ))}
         </div>

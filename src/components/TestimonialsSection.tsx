@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
   const next = () => setCurrent((c) => (c + 1) % testimonials.length);
 
   return (
-    <section className="py-20 px-6 bg-oleander-cream">
+    <section className="py-20 px-6 bg-palessa-cream">
       <div className="max-w-3xl mx-auto text-center">
         <div className="relative min-h-[200px]">
           <p className="font-body text-muted-foreground leading-relaxed text-base italic mb-6">

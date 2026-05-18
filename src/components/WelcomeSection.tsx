@@ -1,19 +1,19 @@
 const galleryImages = [
-  "https://oleanderfarms.com/wp-content/uploads/2025/06/Oleander-farm-2.webp",
-  "https://oleanderfarms.com/wp-content/uploads/2025/06/Oleander-farm-3.webp",
-  "https://oleanderfarms.com/wp-content/uploads/2025/06/Oleander-farm-5.webp",
-  "https://oleanderfarms.com/wp-content/uploads/2025/06/Oleander-farm-4.webp",
-  "https://oleanderfarms.com/wp-content/uploads/2025/06/Oleander-farm-1.webp",
-  "https://oleanderfarms.com/wp-content/uploads/2025/06/Oleander-farm.webp",
+  "/images/Gallery_image_1.png",
+  "/images/Gallery_image_2.png",
+  "/images/Gallery_image_3.png",
+  "/images/Gallery_image_4.png",
+  "/images/gallery_image_5.png",
+  "/images/Gallery_image_6.png",
 ];
 
 const WelcomeSection = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-oleander-cream">
+    <section id="about" className="py-20 px-6 bg-palessa-cream">
       <div className="max-w-4xl mx-auto text-center">
         <img
-          src="https://oleanderfarms.com/wp-content/uploads/2025/07/CH-Icon-e1751643926951.png.webp"
-          alt="Oleander icon"
+          src="/images/PALESSA_LOGO.png"
+          alt="Palessa icon"
           className="h-14 mx-auto mb-4"
         />
         <h1 className="font-heading text-3xl md:text-5xl text-foreground mb-6">
@@ -35,7 +35,7 @@ const WelcomeSection = () => {
           <div key={i} className="overflow-hidden aspect-[4/3]">
             <img
               src={img}
-              alt={`Oleander Farms gallery ${i + 1}`}
+              alt={`Palessa gallery ${i + 1}`}
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
