@@ -73,8 +73,8 @@ const Footer = () => {
           {/* <a href="#" className="hover:text-primary-foreground transition-colors">Blogs</a> */}
           <p>
             Website developed by{" "}
-            <a href="https://www.linkedin.com/in/jai-malani" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              Jai Malani
+            <a href="https://www.sisanc.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              SISANC
             </a>
             .
           </p>

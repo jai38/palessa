@@ -38,7 +38,7 @@ const OleanderDifference = () => {
   const next = () => setCurrentIndex((c) => (c + 1) % slides.length);
 
   return (
-    <section id="offerings" className="bg-palessa-cream py-16 md:py-24">
+    <section id="highlights" className="bg-palessa-cream py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         <h3 className="font-heading text-3xl md:text-4xl text-foreground mb-12 text-center max-w-3xl mx-auto">
           Flavours, conversations, and evenings that linger

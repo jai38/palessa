@@ -4,19 +4,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     image: "/images/Banner_slide_1.png",
-    title: "ULHASNAGAR'S FIRST EVER PALACE OF FLAVOURS,\nNIGHTLIFE & CELEBRATIONS!",
+    title: "WELCOME TO\nPALESSA",
   },
   {
     image: "/images/Banner_Slide_2.png",
-    title: "WELCOME TO\nPALESSA",
+    title: "WHERE CELEBRATIONS \nMEET LUXURY",
   },
   {
     image: "/images/Banner_slide_3.png",
-    title: "ULHASNAGAR'S FIRST EVER PALACE OF FLAVOURS,\nNIGHTLIFE & CELEBRATIONS!",
+    title: "ULHASNAGAR'S FIRST & \nFINEST BOUTIQUE HOTEL",
   },
   {
     image: "/images/Banner_slide_4.png",
-    title: "WELCOME TO\nPALESSA",
+    title: "DINING WHERE FLAVOURS \nTELL A STORY",
   },
 ];
 

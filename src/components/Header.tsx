@@ -5,7 +5,7 @@ const leftNav = [
   { label: "HOME", href: "#home" },
   { label: "ABOUT US", href: "#about" },
   { label: "AMENITIES", href: "#amenities" },
-  { label: "OFFERINGS", href: "#offerings" },
+  { label: "HIGHLIGHTS", href: "#highlights" },
   // { label: "EXPERIENCES", href: "#"},
 ];
 
